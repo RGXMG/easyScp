@@ -1,0 +1,40 @@
+{
+  "name": "easy-project-scp",
+  "version": "0.5.6",
+  "description": "",
+  "main": "./src/index.js",
+  "bin": {
+    "deploy-cli": "./src/cli.js"
+  },
+  "files": [
+    "READMD.md",
+    "src/lib",
+    "src/index.js",
+    "src/cli.js",
+    "src/config"
+  ],
+  "publishConfig": {
+    "registry": "http://39.107.228.137:24873"
+  },
+  "scripts": {
+    "build": "webpack-cli --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node ./src/cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^6.2.0",
+    "inquirer": "^7.1.0",
+    "js-base64": "^3.4.5",
+    "moment": "^2.26.0",
+    "ora": "^4.0.4",
+    "scp2": "^0.5.0",
+    "ssh2": "^0.8.9"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
