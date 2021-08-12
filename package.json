@@ -1,6 +1,6 @@
 {
   "name": "easy-project-scp",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "",
   "main": "./src/index.js",
   "bin": {
